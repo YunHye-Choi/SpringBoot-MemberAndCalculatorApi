@@ -95,6 +95,7 @@ public class CalculatorServiceTest {
 //        assertThat(result.getCorrectAnswer().equals(calculator1.getCorrectAnswer()));
 //        assertThat(result.getFormula().equals(calculator1.getFormula()));
 
+
         assertEquals(calculator1.getCorrectAnswer(), result.getCorrectAnswer());
         assertEquals(calculator1.getFormula(), result.getFormula());
     }
