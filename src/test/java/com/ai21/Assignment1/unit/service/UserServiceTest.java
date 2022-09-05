@@ -90,7 +90,6 @@ class UserServiceTest {
                 .build();
 
         //when
-
         IllegalStateException e = assertThrows(IllegalStateException.class, () -> userService.join(UserRequestDto.toUserRequestDto(userDto1)));
 
         //then
@@ -118,7 +117,7 @@ class UserServiceTest {
 
 
 
-    /////////// legacy - DB 로그인(JWT 적용 x) //////////////
+    /*/////////// legacy - DB 로그인(JWT 적용 x) //////////////
     @Test
     void DB로그인(){
         //given
@@ -180,5 +179,5 @@ class UserServiceTest {
 
         //then
         assertThat(e.getMessage()).isEqualTo(ExceptionMsg.INCORRECT_PASSWORD.getMessage());
-    }
+    }*/
 }
