@@ -56,7 +56,7 @@ public class CalculatorServiceTest {
 
         //then
         Double expected = 7.0;
-        assertThat(calcResult.getCorrectAnswer().equals(expected));
+        assertEquals(calcResult.getCorrectAnswer(),expected);
     }
 
     @Test
@@ -91,11 +91,6 @@ public class CalculatorServiceTest {
         CalculatorDto result = results.getContent().get(0);
 
         //then
-        //todo: 질문 - 왜 노랑거 뜨는지 이해 안됨
-//        assertThat(result.getCorrectAnswer().equals(calculator1.getCorrectAnswer()));
-//        assertThat(result.getFormula().equals(calculator1.getFormula()));
-
-
         assertEquals(calculator1.getCorrectAnswer(), result.getCorrectAnswer());
         assertEquals(calculator1.getFormula(), result.getFormula());
     }
